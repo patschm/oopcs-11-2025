@@ -1,25 +1,44 @@
 ﻿namespace ConsoleLingo;
 
+public record LowercaseChar(char Value)
+{
+    // public char Value 
+    // { 
+    //     get
+    //     {
+    //         return Value;
+    //     } 
+    //     set
+    //     {
+    //         Value = char.ToLower(value); 
+    //     }
+    // }
+    //public static implicit operator char(LowercaseChar lc) => lc.Value;
+    //public static implicit operator LowercaseChar(char c) => new LowercaseChar(char.ToLower(c));
+}
+
 public class LingoCharacter
 {
     // TODO 1: Make sure that this character field only contains lowercase characters.
     // Refactor the code
     // Hint: Check char's members (char.)
-    private char character;
+    private LowercaseChar character;
     // TODO 2: Make sure that position  cannot be less than 0
     private int position;
 
-    public char Character
-    {
-        get
-        {
-            return character;
-        }
-        set
-        {
-            character = char.ToLower(value);
-        }
-    }
+    public LowercaseChar Character {get; set;}
+    
+    // public char Character
+    // {
+    //     get
+    //     {
+    //         return character;
+    //     }
+    //     set
+    //     {
+    //         character = char.ToLower(value);
+    //     }
+    // }
 
     public int Position
     {

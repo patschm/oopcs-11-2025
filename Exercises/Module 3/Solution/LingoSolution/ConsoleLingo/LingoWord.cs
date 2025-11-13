@@ -36,6 +36,7 @@ public class LingoWord
     public LingoWord(string word)
     {
         this.internalWord = new LingoCharacter[word.Length];
+        
         for(int i = 0; i < word.Length;i++)
         {
             LingoCharacter ch = new LingoCharacter(word[i], i);
