@@ -21,7 +21,13 @@ class Program
         detectieLus.Connect(camera);
         detectieLus.Connect(valkuil);
         detectieLus.Connect(lamp);
-       
+
+        detectieLus.Connect(hek.Open);
+        detectieLus.Connect(camera.StartRecording);
+        detectieLus.Connect(valkuil.Open);
+        detectieLus.Connect(lamp.Aan);
+
+
         detectieLus.Activeer();
         // Hier wil ik niks zien
 
